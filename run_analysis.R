@@ -7,6 +7,7 @@ library(dplyr)
 
 #first get the data
 #set the working directory with an absolute path
+#Please change this path to your working directory
 setwd(""C:/Users/Derik/Documents/R/coursera/accelerometer"")
 if (!file.exists("accelerometer_raw.zip"))
 {
@@ -31,6 +32,7 @@ if (!file.exists("accelerometer_raw.zip"))
 ### work first in the train dataset ##
 #####################################
 #load the TRAIN dataset
+#from here, relative paths are used to modify path once
 train<-fread("UCI HAR Dataset/train/X_train.txt")
 
 #read the variable names for the train dataset
