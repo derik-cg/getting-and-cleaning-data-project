@@ -142,4 +142,4 @@ summarise_each(funs(mean)) %>%
 arrange(id,activity)
   
 #finally, write the txt version of the tidy mean data 
-write.table(grouped.means,file="grouped.means.txt",row.names = FALSE)
+write.table(grouped.means,file="grouped.means.txt",sep="\t",row.names = FALSE)
